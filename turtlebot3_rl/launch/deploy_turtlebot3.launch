@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- Launch the configuration file -->
+    <rosparam file="/home/zero/catkin_ws/src/turtlebot3_rl/src/config/config.yaml" />
+    <!-- Launch the real world system -->
+    <node pkg="turtlebot3_rl" name="get_distance_to_goal" type="get_distance_to_goal.py" output="screen"/>
+    <node pkg="turtlebot3_rl" name="get_heading_to_goal" type="get_heading_to_goal.py" output="screen"/>
+    <node pkg="turtlebot3_rl" name="descritize_laserscan" type="descritize_laserscan.py" output="screen"/>
+    <node pkg="turtlebot3_rl" name="run_model" type="run_model.py" cwd="node" output="screen"/>
+    <node pkg="turtlebot3_rl" name="base_controller" type="base_controller.py" cwd="node" output="screen"/>
+</launch>

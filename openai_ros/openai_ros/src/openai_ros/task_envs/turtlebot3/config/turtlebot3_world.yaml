@@ -1,0 +1,21 @@
+turtlebot3: #namespace
+    linear_forward_speed: 0.5 # Speed for going forwards
+    linear_turn_speed: 0.05 # Linear speed when turning
+    angular_speed: 0.3 # Angular speed when turning Left or Right
+    init_linear_forward_speed: 0.0 # Initial linear speed in which we start each episode
+    init_linear_turn_speed: 0.0 # Initial angular speed in shich we start each episode
+    
+    new_ranges: 50 # How many laser readings we jump in each observation reading, the bigger the less laser resolution
+    min_range: 0.14 # Minimum meters below wich we consider we have crashed
+    max_laser_value: 6 # Value considered Ok, no wall
+    min_laser_value: 0 # Value considered there is an obstacle or crashed
+    
+    forwards_reward: 5 # Points Given to go forwards
+    turn_reward: 1 # Points Given to turn as action
+    end_episode_points: 200 # Points given when ending an episode
+    
+    # custom
+    desired_pose:
+      x: 0.7
+      y: 0.7
+      z: 0.0

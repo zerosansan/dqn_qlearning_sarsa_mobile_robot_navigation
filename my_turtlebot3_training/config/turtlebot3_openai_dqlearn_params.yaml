@@ -1,0 +1,14 @@
+turtlebot3: #namespace
+    task_and_robot_environment_name: 'TurtleBot3World-v0'
+    ros_ws_abspath: "/home/zero/simulation_ws"
+    running_step: 0.04 # amount of time the control will be executed
+    pos_step: 0.016 # increment in position for each command
+    
+    #qlearn parameters
+    alpha: 0.00025
+    gamma: 0.99
+    epsilon: 1.0
+    epsilon_discount: 0.995
+    nepisodes: 1500
+    nsteps: 200
+    number_splits: 10 # set to change the number of state splits for the continuous problem and also the number of env_variable splits

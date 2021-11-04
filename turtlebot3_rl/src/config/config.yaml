@@ -1,0 +1,23 @@
+turtlebot3:
+  run_name: "dqn_deploy"
+  desired_pose:
+    x: 0.7
+    y: 0.7
+    z: 0.0
+  starting_pose:
+    x: -0.7
+    y: -0.7
+    z: 0.0
+  desired_pose_xy_offset: 0.2
+  velocity:
+    linear_forward_speed: 0.21 #0.05
+    linear_turn_speed: 0.05
+    angular_speed: 0.3
+    init_linear_forward_speed: 0.0
+    init_linear_turn_speed: 0.0
+  reward:
+    move_forward: 5
+    turn: 1
+    reach_goal: 200
+  laser_scan:
+    min_range: 0.12

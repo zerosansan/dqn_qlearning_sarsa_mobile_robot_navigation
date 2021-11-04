@@ -1,0 +1,11 @@
+episode_number,success_episode,failure_episode,episode_reward,episode_step
+1501,True,False,986,111
+1502,True,False,1012,115
+1503,True,False,904,97
+1504,True,False,939,101
+1505,True,False,822,83
+1506,True,False,879,93
+1507,True,False,1053,120
+1508,True,False,893,95
+1509,True,False,997,113
+1510,True,False,994,110
