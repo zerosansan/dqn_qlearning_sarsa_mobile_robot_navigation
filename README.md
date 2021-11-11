@@ -42,3 +42,17 @@ On the remote PC:
 - Run `roslaunch turtlebot3_bringup turtlebot3_remote.launch`
 - Run `roslaunch turtlebot3_rl deploy_turtlebot3.launch`
 
+## Computer and environment information
+
+**Software**
+
+- OS: Ubuntu 18.04
+- ROS version: Melodic
+- Gazebo version: 9
+- CUDA version: 10.0
+- CuDNN version: 7
+
+**Specifications**
+
+- CPU: Intel i7 9700
+- GPU: Nvidia RTX 2070
